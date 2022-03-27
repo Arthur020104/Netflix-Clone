@@ -1,0 +1,116 @@
+:root
+{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Elementos de base*/
+body
+{
+    background-color: var(--preta);
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+header #logo
+{
+    color: var(--vermelho);
+    font-family:'Arial Black',Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 8px;
+}
+header nav a
+{
+    text-decoration: none;
+    color: #e5e5e5;
+    margin-right: 10px;
+}
+
+header nav a:hover
+{
+    color: #aaa;
+}
+
+header .container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/*filem principal*/
+.filme-principal
+{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)100%), url("images/img-capa.jpg");
+
+    height: 400px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .sinopse
+{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #e5e5e5;
+}
+
+.filme-principal .titulo
+{
+    font-family:'Trebuchet MS', Arial, sans-serif;
+    font-size: 40px;
+    margin-top: 15%;
+}
+
+.button
+{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.button:hover
+{
+    background-color: white;
+    color: black;
+}
+.button i
+{
+    margin-right: 5px;
+}
+
+.container
+{
+    margin-left: 20px;
+}
+.filme-principal .container
+{
+    width: 70%;
+}
+.box-filme
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes
+{
+    margin-top: 5px;
+}
